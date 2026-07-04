@@ -3,8 +3,8 @@
 #define esc_2_pin 27
 #define esc_3_pin 26
 #define esc_4_pin 25
-#define esc_5_pin 35
-#define esc_6_pin 34
+// #define esc_5_pin 35 
+// #define esc_6_pin 34
 // #define esc_7_pin 35
 // #define esc_8_pin 34
 
@@ -59,13 +59,10 @@ void setup_motor()
 /* ===================== CONTROL MOTOR ===================== */
 void control_motor(int m1, int m2, int m3, int m4)
 {
+
+
   ledcWrite(esc_1_channel, m1);
   ledcWrite(esc_2_channel, m2);
   ledcWrite(esc_3_channel, m3);
   ledcWrite(esc_4_channel, m4);
-
-  // ledcWrite(esc_5_channel, m5);
-  // ledcWrite(esc_6_channel, m6);
-  // ledcWrite(esc_7_channel, m7);
-  // ledcWrite(esc_8_channel, m8);
 }
